@@ -1,0 +1,33 @@
+body {
+    width: 1280px;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid red;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.menus ul {
+    display: flex;
+    list-style: none;
+}
+
+.menus ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    margin: 34px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+
+}
