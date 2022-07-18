@@ -31,3 +31,56 @@ nav {
     font-feature-settings: 'liga' off;
 
 }
+
+/* header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+
+.header-speach {
+    width: 700px;
+    height: 475px;
+}
+
+.header-speach h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    /* or 135% */
+
+
+    color: #3A3A3A;
+}
+
+.header-speach p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+
+    color: #3A3A3A;
+}
+
+.header-image {
+    background-image: url("../images/Circle\ design.svg");
+    width: 475px;
+    height: 475px;
+}
+
+.header-image img {
+    width: 440px;
+    height: 414px;
+}
+
+/* brand Image */
+.brand-images img,
+.brand-images hr {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
