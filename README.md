@@ -7,3 +7,6 @@
 <br> git remote add origin https://github.com/jinx71/influence-gear.git
 <br> git push -u origin main
 <br> Here css grid and flexbox is being practiced with simple animation.
+<br>font-family: 'Inter', sans-serif;
+<br>font-family: 'Manrope', sans-serif;
+<br>font-family: 'Poppins', sans-serif;
