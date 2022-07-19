@@ -104,11 +104,18 @@ header {
     align-items: center;
 }
 
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
 
 .product {
     width: 329px;
@@ -126,4 +133,54 @@ header {
     width: 300px;
     height: 256px;
     margin: 16px;
+}
+
+.button-see-more {
+    margin-top: 50px;
+}
+
+.button-see-more button {
+    background-color: transparent;
+    border: 0px;
+
+
+}
+
+.button-see-more a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: rgba(224, 44, 109, 0.87);
+}
+
+/* subscribe */
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe-now {
+    width: 610px;
+}
+
+.subscribe-now-button {
+    border: 0px;
+    background-color: rgba(224, 44, 109, 0.87);
+}
+
+.subscribe a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #FFFFFF;
 }
