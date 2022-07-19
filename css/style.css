@@ -1,9 +1,9 @@
 body {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0px auto;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #FFFFFF;
 }
 
@@ -33,6 +33,15 @@ nav {
 
 }
 
+.mob-nav {
+    display: none;
+}
+
+.shopping-cart a {
+    text-decoration: none;
+    color: #000;
+}
+
 /* header style */
 header {
     display: flex;
@@ -42,8 +51,8 @@ header {
 }
 
 .header-speach {
-    width: 700px;
-    height: 475px;
+    /* width: 700px; */
+    /* height: 475px; */
 }
 
 .header-speach h1 {
@@ -69,6 +78,19 @@ header {
     color: #3A3A3A;
 }
 
+.header-speach .preebook {
+    background-color: rgba(224, 44, 109, 0.87);
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+}
+
 .header-image {
     background-image: url("../images/Circle\ design.svg");
     width: 475px;
@@ -83,13 +105,17 @@ header {
 /* brand Image */
 .brands {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     /* align-items: center; */
 }
 
 .brand-images img {
     /* margin-right: 40px; */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 16px;
+
 
 }
 
@@ -160,7 +186,6 @@ header {
 /* subscribe */
 .subscribe {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -183,4 +208,68 @@ header {
     line-height: 24px;
     /* identical to box height */
     color: #FFFFFF;
+}
+
+/* footer Style */
+footer {
+    background-color: #0A0826;
+    margin-top: 100px;
+
+}
+
+.footer-info {
+    padding: 50px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    width: 328px;
+    text-align: center;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.footer-info .fa-brands {
+    font-size: 32px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width : 576px) {
+    .web-nav {
+        display: none;
+    }
+
+    .mob-nav {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .header-speach {
+        text-align: center;
+    }
+
+    .brand-images {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .products {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscribe {
+        flex-direction: column-reverse;
+    }
+
+    .subscribe-now {
+        width: 80vw;
+        text-align: center;
+        margin: 100px;
+    }
 }
